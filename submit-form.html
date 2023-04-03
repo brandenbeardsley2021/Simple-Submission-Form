@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/Users/bbeardsley/style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Title</h1>
+    <p id="description">Survey Description</p>
+
+    <form id="survey-form">
+        <!-- Name input field -->
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" required placeholder="Enter your name">
+
+        <!-- Email input field -->
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" required placeholder="Enter your email">
+
+        <!-- Number input field -->
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" required min="1" max="100" placeholder="Enter your age">
+
+        <!-- Dropdown select field -->
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <!-- Radio buttons -->
+        <label>Choose a radio option:</label>
+        <input type="radio" name="radioOption" value="radio1">Option 1
+        <input type="radio" name="radioOption" value="radio2">Option 2
+
+        <!-- Checkboxes -->
+        <label>Choose checkboxes:</label>
+        <input type="checkbox" name="checkboxOption" value="checkbox1">Checkbox 1
+        <input type="checkbox" name="checkboxOption" value="checkbox2">Checkbox 2
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments"></textarea>
+
+        <!-- Submit button -->
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
